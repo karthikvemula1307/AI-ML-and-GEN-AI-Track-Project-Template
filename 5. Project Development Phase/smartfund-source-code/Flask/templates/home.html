@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Lender — AI Loan Eligibility</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="grain"></div>
+
+<!-- NAV -->
+<nav class="nav-island">
+    <a href="/" class="nav-brand"><span class="mark"><i class="ph ph-bank"></i></span> Smart Lender</a>
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#showcase">Product</a>
+        <a href="#how">How it works</a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <a href="/login" class="btn-glow">Get started <span class="pip"><i class="ph ph-arrow-up-right"></i></span></a>
+</nav>
+
+<!-- HERO -->
+<header class="container section" style="padding-top:clamp(4rem,9vw,7rem)">
+    <div class="row align-items-center g-5">
+        <div class="col-lg-7 reveal">
+            <span class="eyebrow"><i class="ph ph-sparkle"></i> AI credit intelligence</span>
+            <h1 class="hero-title mt-4">Loan decisions,<br><span class="grad-text">predicted in seconds.</span></h1>
+            <p class="lead-2 mt-4">Smart Lender scores applicant eligibility with a Random Forest engine — confidence, risk tier and a signed report, instantly.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="/login" class="btn-glow">Run a prediction <span class="pip"><i class="ph ph-arrow-right"></i></span></a>
+                <a href="#how" class="btn-ghost"><i class="ph ph-play-circle"></i> See how</a>
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-5">
+                <div class="avatar-stack">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="">
+                </div>
+                <div class="text-muted-2" style="font-size:.85rem"><span style="color:#fff;font-weight:600">Credit teams</span> scoring smarter with Smart Lender</div>
+            </div>
+        </div>
+        <div class="col-lg-5 reveal">
+            <div class="hero-stage">
+                <div class="media-frame hero-photo hover-lift">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=760&q=80" alt="Credit analytics dashboard">
+                </div>
+                <div class="bezel hover-lift">
+                    <div class="glass p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <span class="text-muted-2" style="font-size:.8rem;text-transform:uppercase;letter-spacing:.12em">Live decision</span>
+                            <span class="pill ok"><i class="ph ph-check-circle"></i> Approved</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="gauge" style="width:120px;height:120px">
+                                <svg width="120" height="120">
+                                    <circle cx="60" cy="60" r="50" stroke="rgba(255,255,255,.08)" stroke-width="10" fill="none"/>
+                                    <circle cx="60" cy="60" r="50" stroke="#e2e7ef" stroke-width="10" fill="none"
+                                        stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="47"/>
+                                </svg>
+                                <div class="val"><div><b>85%</b><span>confidence</span></div></div>
+                            </div>
+                            <div>
+                                <div class="mb-3"><div class="text-muted-2" style="font-size:.75rem">Risk tier</div><div style="font-family:'Space Grotesk';font-size:1.3rem;color:#fff">Low</div></div>
+                                <div><div class="text-muted-2" style="font-size:.75rem">Model</div><div style="font-family:'Space Grotesk';font-size:1.3rem;color:#fff">Random Forest</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- LOGO / TRUST STRIP -->
+<section class="container reveal" style="padding-bottom:1rem">
+    <div class="bezel">
+        <div class="glass p-3 p-md-4">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3"><div class="stat" style="padding:.5rem"><div class="k text-emerald">92%</div><div class="lbl">Model accuracy</div></div></div>
+                <div class="col-6 col-md-3"><div class="stat" style="padding:.5rem"><div class="k">11</div><div class="lbl">Signals scored</div></div></div>
+                <div class="col-6 col-md-3"><div class="stat" style="padding:.5rem"><div class="k text-violet">&lt;1s</div><div class="lbl">Decision time</div></div></div>
+                <div class="col-6 col-md-3"><div class="stat" style="padding:.5rem"><div class="k">PDF</div><div class="lbl">Signed reports</div></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="container section">
+    <div class="reveal mb-5">
+        <span class="eyebrow"><i class="ph ph-stack"></i> Platform</span>
+        <h2 class="mt-3" style="font-size:clamp(2rem,4vw,3rem)">Everything a credit desk needs</h2>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-4 reveal">
+            <div class="glass-card hover-lift h-100">
+                <div class="stat"><div class="ic"><i class="ph ph-brain"></i></div></div>
+                <h3 style="font-size:1.3rem">AI eligibility engine</h3>
+                <p class="text-muted-2 mb-0">11 signals — income, credit history, property area and more — scored by a trained Random Forest classifier.</p>
+            </div>
+        </div>
+        <div class="col-md-4 reveal">
+            <div class="glass-card hover-lift h-100">
+                <div class="stat violet"><div class="ic"><i class="ph ph-gauge"></i></div></div>
+                <h3 style="font-size:1.3rem">Confidence & risk</h3>
+                <p class="text-muted-2 mb-0">Every decision ships with a probability score and a Low / Medium / High risk tier.</p>
+            </div>
+        </div>
+        <div class="col-md-4 reveal">
+            <div class="glass-card hover-lift h-100">
+                <div class="stat"><div class="ic"><i class="ph ph-file-pdf"></i></div></div>
+                <h3 style="font-size:1.3rem">Signed PDF reports</h3>
+                <p class="text-muted-2 mb-0">Generate a branded, downloadable eligibility report for every applicant in one click.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHOWCASE -->
+<section id="showcase" class="container section" style="padding-top:0">
+    <div class="bezel reveal">
+        <div class="glass overflow-hidden">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="media-frame showcase-img hover-lift" style="border:0;border-radius:0;box-shadow:none">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80" alt="Analyst reviewing financial data">
+                        <div class="media-cap"><div class="t">Real-time credit scoring</div><div class="s">From application to signed decision in one screen.</div></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5">
+                        <span class="eyebrow"><i class="ph ph-chart-line-up"></i> Built for lenders</span>
+                        <h2 class="mt-3" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Turn applications into decisions</h2>
+                        <p class="text-muted-2 mt-3">Enter the applicant profile and Smart Lender returns an approval call, a confidence score and a risk tier — every result tracked in your dashboard and exportable as a signed PDF.</p>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><i class="ph ph-check-circle text-emerald" style="font-size:1.3rem"></i><span>Random Forest classifier trained on real loan data</span></div>
+                            <div class="d-flex align-items-center gap-3 mb-3"><i class="ph ph-check-circle text-emerald" style="font-size:1.3rem"></i><span>Bank-grade password hashing on every account</span></div>
+                            <div class="d-flex align-items-center gap-3"><i class="ph ph-check-circle text-emerald" style="font-size:1.3rem"></i><span>Dashboard analytics with approval trends</span></div>
+                        </div>
+                        <a href="/register" class="btn-glow mt-4">Get started free <span class="pip"><i class="ph ph-arrow-up-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="container section" style="padding-top:0">
+    <div class="bezel reveal">
+        <div class="glass p-4 p-md-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <span class="eyebrow"><i class="ph ph-path"></i> Workflow</span>
+                    <h2 class="mt-3" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Three steps to a decision</h2>
+                    <a href="/register" class="btn-glow violet mt-4">Create account <span class="pip"><i class="ph ph-arrow-up-right"></i></span></a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="d-flex gap-3 mb-4"><div class="stat" style="padding:0"><div class="ic">1</div></div><div><h3 style="font-size:1.15rem">Enter applicant details</h3><p class="text-muted-2 mb-0">Income, loan amount, credit history and demographics.</p></div></div>
+                    <div class="d-flex gap-3 mb-4"><div class="stat violet" style="padding:0"><div class="ic">2</div></div><div><h3 style="font-size:1.15rem">Model scores instantly</h3><p class="text-muted-2 mb-0">The engine returns approval, confidence and risk.</p></div></div>
+                    <div class="d-flex gap-3"><div class="stat" style="padding:0"><div class="ic">3</div></div><div><h3 style="font-size:1.15rem">Export the report</h3><p class="text-muted-2 mb-0">Download a signed PDF and track it in your dashboard.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="container section" style="padding-top:0">
+    <div class="row g-4">
+        <div class="col-md-4 reveal">
+            <div class="glass-card quote-card hover-lift h-100">
+                <div class="qmark"><i class="ph ph-quotes"></i></div>
+                <p class="mt-2 mb-4">Cut our first-pass review time from hours to seconds. The confidence score is exactly what our desk needed.</p>
+                <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="">
+                    <div><div style="color:#fff;font-weight:600">Priya Nair</div><div class="text-muted-2" style="font-size:.82rem">Credit Analyst</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 reveal">
+            <div class="glass-card quote-card hover-lift h-100">
+                <div class="qmark"><i class="ph ph-quotes"></i></div>
+                <p class="mt-2 mb-4">The signed PDF reports slot straight into our approval workflow. Clean, branded, instant.</p>
+                <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="">
+                    <div><div style="color:#fff;font-weight:600">Marcus Webb</div><div class="text-muted-2" style="font-size:.82rem">Lending Ops Lead</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 reveal">
+            <div class="glass-card quote-card hover-lift h-100">
+                <div class="qmark"><i class="ph ph-quotes"></i></div>
+                <p class="mt-2 mb-4">Risk tiers give me a defensible reason for every call. It's become part of how we lend.</p>
+                <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=120&q=80" alt="">
+                    <div><div style="color:#fff;font-weight:600">Sara Chen</div><div class="text-muted-2" style="font-size:.82rem">Head of Underwriting</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="container section" style="padding-top:0">
+    <div class="bezel reveal">
+        <div class="media-frame" style="border:0">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80" alt="Team reviewing loan applications" style="max-height:360px">
+            <div class="media-cap" style="left:0;right:0;bottom:0;top:0;display:grid;place-items:center;text-align:center;padding:2rem">
+                <div>
+                    <h2 style="font-size:clamp(1.8rem,4vw,3rem)">Start scoring loans today</h2>
+                    <p class="text-muted-2 mx-auto mt-2" style="max-width:42ch">Create a free account and run your first AI eligibility prediction in under a minute.</p>
+                    <a href="/register" class="btn-glow mt-3"><i class="ph ph-rocket-launch"></i> Create free account <span class="pip"><i class="ph ph-arrow-up-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="container foot">
+    <div class="nav-brand justify-content-center mb-3"><span class="mark"><i class="ph ph-bank"></i></span> Smart Lender</div>
+    Random Forest · Flask · SQLite — <a href="/login">Sign in</a>
+</footer>
+
+<script>
+const io = new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
