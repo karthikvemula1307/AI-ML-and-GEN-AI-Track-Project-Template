@@ -53,4 +53,4 @@ V.Sai Karthik
 
 B.Tech, SRM University AP
 
-GitHub: https://github.com/avinashkanneboyina-sys
+GitHub: https://github.com/karthikvemula1307
