@@ -49,7 +49,7 @@ https://smartfund-1.onrender.com/
 
 👨‍💻 Author
 
-Avinash Kanneboyina
+V.Sai Karthik
 
 B.Tech, SRM University AP
 
